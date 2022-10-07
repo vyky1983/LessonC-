@@ -1,15 +1,18 @@
 ﻿using static System.Console;
 Clear();
 
-// int[] array = new int[9];
+string[,] table = new string[2,5];
+//string.Empti
+// вот ка выглядет двумерный масив и его индексы
+/*table[0,0] table[0,1] table[0,2] table[0,3] table[0,4]
+  table[1,0] table[1,1] *table[1,2]* table[1,3] table[1,4]*/
 
-// int PrintArray(int[] array)
-// {
-//  int rnd = new Random().Next(1,10);
-//  for (int i = 0; i < array.Length; i++)
-//  {
-//   int result = array[i];
-//   WriteLine(result);
-//  }
-//  return array;
-// }
+table[1,2] = "слово"; /* вот где будет находиться наше слово*/
+
+for (int row = 0; row < 2; row++)
+{
+ for (int column = 0; column < 5; column++)
+ {
+  WriteLine($"{table[row,column]}--");
+ }
+}
