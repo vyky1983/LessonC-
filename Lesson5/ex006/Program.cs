@@ -1,7 +1,7 @@
 ﻿using static System.Console;
 Clear();
 
-/**/
+/* Коментарий */
 
  double a = 2.36;
 System.Console.WriteLine(a.GetType().Name );
